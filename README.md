@@ -9,6 +9,21 @@ docker run -d -p 8081:80 myapp
 
 Now you can access the application on localhost:8081
 
+#List all running containers
+docker ps
+
+# List all containers
+docker ps -a
+
+#To start,stop & remove containers
+docker start <container name>
+docker stop <container name>
+docker rm <container name>
+docker rm -f <container name>  --to forcefully remove the container
+
+#To inspect running containers and view logs
+docker inspect <container name>
+docker logs <container name>
 
 Now if you want to run the containers through a docker compose file use the below command.
 #Run the containers from docker compose file
@@ -16,6 +31,17 @@ docker compose up -d
 
 Access the ports defined in the file and you will be able to see the desired result.
 
+#To push the images to docker hub
+Firstly tag the image with the repo name
+ docker tag <present-repo:tag>  <dockerub repo:tag>
+
+ Now push the tagged image
+ docker push rahulgandhi01/test-repo/:v2
+
+ #To pull the image
+ docker pull rahulgandhi01/test-repo:v2
+
+ Now you can run the image with docker run to run it locally.
 
 --#Bonus Question#--
 
