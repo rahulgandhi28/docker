@@ -12,7 +12,7 @@ Now you can access the application on localhost:8081
 #List all running containers
 docker ps
 
-# List all containers
+#List all containers
 docker ps -a
 
 #To start,stop & remove containers
