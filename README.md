@@ -1,6 +1,6 @@
 In this project we have created a simple html web app 
 
-To containerize the application follow the below steps:
+To containerize the application follow the below steps:  
 #Build the Docker image from docker file :
 docker build -t myapp .
 
